@@ -2,9 +2,8 @@ FROM gitpod/workspace-full
 
 USER root
 
-RUN true "gjfgjdfsh" \
+RUN true "hfgdhf" \
 	&& apt-get update \
-	&& apt-get install -y apt-utils \
 	# https://github.com/Automattic/node-canvas/blob/master/.github/workflows/ci.yaml#L19
 	&& apt-get install -y \
         	build-essential \
@@ -15,9 +14,10 @@ RUN true "gjfgjdfsh" \
         	librsvg2-dev
 
 COPY gitpod-1520.sh /usr/bin/gitpod-1520
-RUN true \
+RUN true "dsgasdgasd" \
   && chmod +x /usr/bin/gitpod-1520 \
-  && /usr/bin/gitpod-1520
+  && /usr/bin/gitpod-1520 | tee -a /var/log/gitpod-1520 \
+  && rm /usr/bin/gitpod-1520
 
 RUN true \
   && apt-get update \
