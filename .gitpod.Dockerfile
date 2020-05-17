@@ -1,5 +1,7 @@
 FROM gitpod/workspace-full
 
+ENV DEBUG=1
+
 USER root
 
 RUN true "hfgdhf" \
@@ -14,9 +16,9 @@ RUN true "hfgdhf" \
         	librsvg2-dev
 
 COPY gitpod-1520.sh /usr/bin/gitpod-1520
-RUN true "dsgasdgasd" \
+RUN true "agsdhfjd" \
   && chmod +x /usr/bin/gitpod-1520 \
-  && /usr/bin/gitpod-1520 | tee -a /var/log/gitpod-1520 \
+  && /usr/bin/gitpod-1520 |& tee -a /var/log/gitpod-1520 \
   && rm /usr/bin/gitpod-1520
 
 RUN true \
