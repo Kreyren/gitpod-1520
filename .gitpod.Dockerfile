@@ -14,6 +14,11 @@ RUN true "gjfgjdfsh" \
         	libgif-dev \
         	librsvg2-dev
 
+COPY gitpod-1520.sh /usr/bin/gitpod-1520
+RUN true \
+  && chmod +x /usr/bin/gitpod-1520 \
+  && /usr/bin/gitpod-1520
+
 RUN true \
   && apt-get update \
   && apt-get install -y apt-file \
