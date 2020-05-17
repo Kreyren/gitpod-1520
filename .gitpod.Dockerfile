@@ -18,7 +18,7 @@ RUN true "hfgdhf" \
 COPY gitpod-1520.sh /usr/bin/gitpod-1520
 RUN true "agsdhfjd" \
   && chmod +x /usr/bin/gitpod-1520 \
-  && /usr/bin/gitpod-1520 |& tee -a /var/log/gitpod-1520 \
+  && /usr/bin/gitpod-1520 &| tee -a /var/log/gitpod-1520 \
   && rm /usr/bin/gitpod-1520
 
 RUN true \
