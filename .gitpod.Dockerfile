@@ -2,7 +2,7 @@ FROM gitpod/workspace-full
 
 USER root
 
-RUN true \
+RUN true "asjghsdjkgha" \
 	&& apt-get update \
 	&& apt-get install -y apt-utils \
 	# https://github.com/Automattic/node-canvas/blob/master/.github/workflows/ci.yaml#L19
