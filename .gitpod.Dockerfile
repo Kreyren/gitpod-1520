@@ -16,4 +16,5 @@ RUN true "gjfgjdfsh" \
 
 RUN true \
   && apt-get update \
-  && apt-get install -y apt-file
+  && apt-get install -y apt-file \
+  && apt-file update
