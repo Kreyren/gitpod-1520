@@ -13,3 +13,7 @@ RUN true "gjfgjdfsh" \
         	libjpeg8-dev \
         	libgif-dev \
         	librsvg2-dev
+
+RUN true \
+  && apt-get update \
+  && apt-get install -y apt-file
