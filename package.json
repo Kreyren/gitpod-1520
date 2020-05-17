@@ -1,4 +1,25 @@
 {
-  "name": "canvas",
-  "version": "2.6.1"
+  "name": "gitpod-1520",
+  "version": "1.0.0",
+  "description": "PoC for https://github.com/gitpod-io/gitpod/issues/1520",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kreyren/gitpod-1520.git"
+  },
+  "keywords": [],
+  "author": "Kreyren",
+  "dependencies": {
+    "canvas": "6.2.0",
+    "node-pre-gyp": "0.14.0",
+    "request": "2.88.2"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kreyren/gitpod-1520/issues"
+  },
+  "homepage": "https://github.com/Kreyren/gitpod-1520#readme"
 }
